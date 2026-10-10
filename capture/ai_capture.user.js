@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AI assistant stream capture
 // @namespace    ai-stream-analytics
-// @version      2.3
+// @version      2.4
 // @description  Saves answer streams + stored conversations from ChatGPT, Claude, Perplexity and Gemini
 // @match        https://chatgpt.com/*
 // @match        https://claude.ai/*
@@ -36,8 +36,10 @@
   // ignore: streams that match but are not answers. ws: record WebSockets (only ChatGPT moves answers there;
   // Perplexity's socket carries the sidebar/history, which is private and irrelevant).
   const PLATFORMS = [
+    // chatgpt.com (2026-10): the stored conversation moved to GET /backend-api/conversations/<id>?num_turns=10
+    // (plural, paged via page_info) and returns a flat `messages` list instead of `mapping`.
     { host: /(^|\.)chatgpt\.com$/, name: 'chatgpt', api: /\/backend-api\//,
-      stream: /\/backend-api\/(f\/)?conversation(\?|$)/, stored: /\/backend-api\/conversation\/[0-9a-f-]{36}(\?|$)/,
+      stream: /\/backend-api\/(f\/)?conversation(\?|$)/, stored: /\/backend-api\/conversations?\/[0-9a-f-]{36}(\?|$)/,
       end: /\[DONE\]|message_stream_complete/, ws: true },
     // claude.ai (2026-10): messages go out via Connect-RPC ConversationService/PerformAction and the answer
     // streams back from ConversationService/StreamTimeline; the older REST .../completion SSE is kept as fallback.

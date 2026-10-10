@@ -1,0 +1,675 @@
+{
+  "platform": "chatgpt",
+  "prompt": "youtube: how to make the best pizza dough at home",
+  "model": "gpt-6-mini",
+  "captured_at": "2026-10-10T13:34:23.763Z",
+  "conversation_id": "6aca3ed6-87b0-83e8-a5d4-0eb78a108d6c",
+  "fanout_queries": [
+    "best pizza dough recipe at home YouTube poolish cold ferment Kenji Vito Iacopelli"
+  ],
+  "sources": [
+    {
+      "url": "https://www.youtube.com/watch?v=G-jPoROGHGE",
+      "title": "How to Make Perfect Pizza Dough - For the House⎮NEW 2021 - YouTube",
+      "snippet": "",
+      "pub_date": "2020-11-29",
+      "attribution": "www.youtube.com",
+      "type": "youtube",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": true,
+      "ref_ids": [
+        "turn293939youtube12"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel"
+        ],
+        "link_spans": [
+          {
+            "start": 790,
+            "end": 853
+          }
+        ]
+      },
+      "domain": "youtube.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xjODclCGtR4",
+      "title": "Neapolitan Pizza Dough Most Successful | Full Process Vito Iacopelli - YouTube",
+      "snippet": "",
+      "pub_date": "2024-01-11",
+      "attribution": "www.youtube.com",
+      "type": "youtube",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": true,
+      "ref_ids": [
+        "turn293939youtube13"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel"
+        ],
+        "link_spans": [
+          {
+            "start": 1396,
+            "end": 1459
+          }
+        ]
+      },
+      "domain": "youtube.com"
+    },
+    {
+      "url": "https://glasp.co/youtube/u7Hd6ZzKgBM",
+      "title": "How to Make Double-Fermented Poolish Pizza Dough | Glasp",
+      "snippet": "HOW TO MAKE DOUBLE-FERMENTED POOLISH PIZZA DOUGH  6.8M views  •  June 11, 2021  by  Vito Iacopelli  Image: YouTube video player  How to Make Double-Fermented Poolish Pizza Dough  TL;DR  Make a poolis...",
+      "pub_date": "2021-06-11",
+      "attribution": "glasp.co",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search0",
+        "turn0search0"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "HOW TO MAKE DOUBLE-FERMENTED POOLISH PIZZA DOUGH  6.8M views  •  June 11, 2021  by  Vito Iacopelli  Image: YouTube video player  How to Make Double-Fermented Poolish Pizza Dough  TL;DR  Make a poolis..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "glasp.co"
+    },
+    {
+      "url": "https://www.viaouest.com/YTdata-G-jPoROGHGE.html",
+      "title": "Video publiee : How to make perfect pizza dough - for the house⎮new 2021 - Vito",
+      "snippet": "How to make perfect pizza dough - for the house⎮new 2021 En bref Proposée par Vito Iacopelli, cette vidéo est signalée comme Publiée. Elle dure 21 min 49 s et est proposée en HD 2D. Elle compte 10 816...",
+      "pub_date": "2020-11-29",
+      "attribution": "www.viaouest.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search1",
+        "turn0search1"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 203,
+          "text": "How to make perfect pizza dough - for the house⎮new 2021 En bref Proposée par Vito Iacopelli, cette vidéo est signalée comme Publiée. Elle dure 21 min 49 s et est proposée en HD 2D. Elle compte 10 816..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "viaouest.com"
+    },
+    {
+      "url": "https://www.pizzamaking.com/forum/index.php?topic=76359.0",
+      "title": "Pizza Making Forum - Dough Clinic - help me find the correct process",
+      "snippet": "HELP ME FIND THE CORRECT PROCESS  Started by BoiledPizza, September 03, 2022, 09:39:40 PM  BOILEDPIZZA  *   *   * Registered User * Posts: 14 * I Love Pizza! * Location: yes * Logged  help me find th...",
+      "pub_date": "2022-09-03",
+      "attribution": "www.pizzamaking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search2",
+        "turn0search2"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "HELP ME FIND THE CORRECT PROCESS  Started by BoiledPizza, September 03, 2022, 09:39:40 PM  BOILEDPIZZA  *   *   * Registered User * Posts: 14 * I Love Pizza! * Location: yes * Logged  help me find th..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "pizzamaking.com"
+    },
+    {
+      "url": "https://www.diningandcooking.com/1008637/how-to-make-best-neapolitan-pizza-100-poolish-recipe-in-electric-oven/",
+      "title": "How To Make Best Neapolitan Pizza - 100% Poolish Recipe In Electric Oven - Dining and Cooking | DiningAndCooking.com",
+      "snippet": "In American Recipes  HOW TO MAKE BEST NEAPOLITAN PIZZA – 100% POOLISH RECIPE IN ELECTRIC OVEN  October 21, 2023  How To Make Best Neapolitan Pizza - 100% Poolish Recipe In Electric Oven SUBSCRIBE htt...",
+      "pub_date": "2023-10-21",
+      "attribution": "www.diningandcooking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search3",
+        "turn0search3"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "In American Recipes  HOW TO MAKE BEST NEAPOLITAN PIZZA – 100% POOLISH RECIPE IN ELECTRIC OVEN  October 21, 2023  How To Make Best Neapolitan Pizza - 100% Poolish Recipe In Electric Oven SUBSCRIBE htt..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "diningandcooking.com"
+    },
+    {
+      "url": "https://www.diningandcooking.com/943607/how-to-make-perfect-pizza-dough-for-the-house%E2%8E%AEnew-2021/",
+      "title": "How to Make Perfect Pizza Dough - For the House⎮NEW 2021 - Dining and Cooking | DiningAndCooking.com",
+      "snippet": "In American Recipes  HOW TO MAKE PERFECT PIZZA DOUGH – FOR THE HOUSE⎮NEW 2021  November 29, 2020  How to Make Perfect Pizza Dough - For the House⎮NEW 2021 SUBSCRIBE ❥ https://www.youtube.com/user/mae...",
+      "pub_date": "2020-11-29",
+      "attribution": "www.diningandcooking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search7",
+        "turn0search7"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "In American Recipes  HOW TO MAKE PERFECT PIZZA DOUGH – FOR THE HOUSE⎮NEW 2021  November 29, 2020  How to Make Perfect Pizza Dough - For the House⎮NEW 2021 SUBSCRIBE ❥ https://www.youtube.com/user/mae..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "diningandcooking.com"
+    },
+    {
+      "url": "https://chuysmenu.com/vito-iacopelli-pizza-dough-recipe/",
+      "title": "Vito Iacopelli Pizza Dough Recipe - Chuy's Menu",
+      "snippet": "VITO IACOPELLI PIZZA DOUGH RECIPE  By Julie Chuy / February 13, 2026  Jump to Recipe  The Vito Iacopelli Pizza Dough is one of the most talked-about pizza dough methods today.  I got curious about it...",
+      "pub_date": "2026-02-13",
+      "attribution": "chuysmenu.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search4",
+        "turn0search4"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "VITO IACOPELLI PIZZA DOUGH RECIPE  By Julie Chuy / February 13, 2026  Jump to Recipe  The Vito Iacopelli Pizza Dough is one of the most talked-about pizza dough methods today.  I got curious about it..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "chuysmenu.com"
+    },
+    {
+      "url": "https://cookwithzoey.com/vito-iacopelli-poolish-pizza-dough-recipe/",
+      "title": "Vito Iacopelli Poolish Pizza Dough Recipe - Cook With Zoey",
+      "snippet": "VITO IACOPELLI POOLISH PIZZA DOUGH RECIPE  ByJamie Dimon August 29, 2026August 29, 2026  Jump to Recipe  A good pizza starts with the crust. I want that edge to be crunchy and well browned, while the...",
+      "pub_date": "2026-08-29",
+      "attribution": "cookwithzoey.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search5",
+        "turn0search5"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "VITO IACOPELLI POOLISH PIZZA DOUGH RECIPE  ByJamie Dimon August 29, 2026August 29, 2026  Jump to Recipe  A good pizza starts with the crust. I want that edge to be crunchy and well browned, while the..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "cookwithzoey.com"
+    },
+    {
+      "url": "https://eastingtonpaddington.com/2025/02/12/the-perfect-neapolitan-pizza/",
+      "title": "*The Perfect Neapolitan Pizza – Eastington @ Paddington",
+      "snippet": "*Favourites, CAMPANIA, Flours, ITALY, Pizza  *THE PERFECT NEAPOLITAN PIZZA  Published by  Marcus  on  February 12, 2025  Image  by Vito Iacopelli  iframe  This is the best recipe I have come across f...",
+      "pub_date": "2025-02-12",
+      "attribution": "eastingtonpaddington.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search6",
+        "turn0search6"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "*Favourites, CAMPANIA, Flours, ITALY, Pizza  *THE PERFECT NEAPOLITAN PIZZA  Published by  Marcus  on  February 12, 2025  Image  by Vito Iacopelli  iframe  This is the best recipe I have come across f..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "eastingtonpaddington.com"
+    },
+    {
+      "url": "https://yumasy.com/vito-iacopelli-pizza-dough-recipe-authentic-neapolitan-style-dough-made-simple/",
+      "title": "Vito Iacopelli Pizza Dough Recipe — Authentic Neapolitan-Style Dough Made Simple – Yumasy",
+      "snippet": "VITO IACOPELLI PIZZA DOUGH RECIPE — AUTHENTIC NEAPOLITAN-STYLE DOUGH MADE SIMPLE  Byyumasy February 19, 2026April 25, 2026  I love making pizza at home, and Vito Iacopelli’s dough method changed how...",
+      "pub_date": "2026-02-19",
+      "attribution": "yumasy.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search8",
+        "turn0search8"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 201,
+          "text": "VITO IACOPELLI PIZZA DOUGH RECIPE — AUTHENTIC NEAPOLITAN-STYLE DOUGH MADE SIMPLE  Byyumasy February 19, 2026April 25, 2026  I love making pizza at home, and Vito Iacopelli’s dough method changed how..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "yumasy.com"
+    },
+    {
+      "url": "https://copycatcooking.com/vito-iacopelli-dough-recipe/",
+      "title": "Vito Iacopelli Dough Recipe - CopyCat Cooking",
+      "snippet": "HOW TO MAKE VITO IACOPELLI DOUGH COPYCAT  1. Make the Poolish In a bowl, mix: 300g water, 5g honey, 6g fresh yeast (or 5g dry yeast), Stir to dissolve, then add 300g of “00” flour. Mix until smooth, c...",
+      "pub_date": "2026-04-12",
+      "attribution": "copycatcooking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search9",
+        "turn0search9"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 203,
+          "text": "HOW TO MAKE VITO IACOPELLI DOUGH COPYCAT  1. Make the Poolish In a bowl, mix: 300g water, 5g honey, 6g fresh yeast (or 5g dry yeast), Stir to dissolve, then add 300g of “00” flour. Mix until smooth, c..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "copycatcooking.com"
+    },
+    {
+      "url": "https://www.ganjingworld.com/video/1i7d5o5ao953sIfJtv9aqQvhZ1aa1c",
+      "title": "Neapolitan Pizza Dough Most Successful | Full Process Vito Iacopelli | Gan Jing World",
+      "snippet": "NEAPOLITAN PIZZA DOUGH MOST SUCCESSFUL | FULL PROCESS VITO IACOPELLI  Green Planet Cuisine  Follow·40  4 Share Save Report  82 Video Views·Jan 5, 2026  #asrm  SUBSCRIBE / maestrovitoiacopelli MY MAST...",
+      "pub_date": "2026-01-05",
+      "attribution": "www.ganjingworld.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search10",
+        "turn0search10"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 202,
+          "text": "NEAPOLITAN PIZZA DOUGH MOST SUCCESSFUL | FULL PROCESS VITO IACOPELLI  Green Planet Cuisine  Follow·40  4 Share Save Report  82 Video Views·Jan 5, 2026  #asrm  SUBSCRIBE / maestrovitoiacopelli MY MAST..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "ganjingworld.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/11kmbst",
+      "title": "first attempt at a Neapolitan style, double cold ferment dough, classic marg toppings",
+      "snippet": "",
+      "pub_date": "2023-03-07",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939reddit14"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://backyahdbbq.com/recipes/poolish-pizza-dough",
+      "title": "Vito's Poolish Pizza Dough (64.5% Hydration) | Backyahd BBQ",
+      "snippet": "PIZZA DOUGH CHEAT SHEET  Vito's Poolish Method - 64.5% Hydration  Pizzas: 3  Eating: 6:00 PM, Today  Ball: ~259g  POOLISH (Day 1)  Water:90ml  Flour:90g  Honey:5g (fixed)  Dried Yeast:5g (fixed)  DOUG...",
+      "pub_date": null,
+      "attribution": "backyahdbbq.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn293939search11",
+        "turn0search11"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        },
+        {
+          "location": "answer_sources",
+          "kind": "short",
+          "length": 203,
+          "text": "PIZZA DOUGH CHEAT SHEET  Vito's Poolish Method - 64.5% Hydration  Pizzas: 3  Eating: 6:00 PM, Today  Ball: ~259g  POOLISH (Day 1)  Water:90ml  Flour:90g  Honey:5g (fixed)  Dried Yeast:5g (fixed)  DOUG..."
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "backyahdbbq.com"
+    }
+  ],
+  "reasoning": [
+    "Searched 13 websites",
+    "Worked for a couple of seconds"
+  ],
+  "answer": "If you want **amazing homemade pizza with a soft, airy, bubbly crust like a proper Italian pizzeria**, I'd start with Vito Iacopelli's poolish method. It uses a pre-ferment to develop flavor and a light, airy texture. 🍕\n\n<box gap={4}>\n  <row align=start gap={3}>\n    <AsyncImage query=\"Vito Iacopelli How to Make Perfect Pizza Dough For the House New 2021 YouTube thumbnail\" aspectRatio=\"9:16\" maxWidth=\"124px\"/>\n    <box flex=\"1\" gap={1}>\n      **1. Best overall: Neapolitan pizza dough**\n\n      <text color=\"secondary\" size=\"sm\">Vito Iacopelli · Poolish method · Beginner-friendly with planning</text>\n\n      A great starting point for learning pizzeria-style dough, stretching, fermentation and getting those big, airy crust bubbles.\n\n      <text><icon name=\"youtube\" size=\"sm\" inline/> [Watch on YouTube](https://www.youtube.com/watch?v=G-jPoROGHGE)</text>\n    </box>\n  </row>\n  <divider color=\"subtle\"/>\n  <row align=start gap={3}>\n    <AsyncImage query=\"Vito Iacopelli Neapolitan Pizza Dough Most Successful Full Process YouTube thumbnail 2024\" aspectRatio=\"9:16\" maxWidth=\"124px\"/>\n    <box flex=\"1\" gap={1}>\n      **2. Full process: Dough to finished pizza**\n\n      <text color=\"secondary\" size=\"sm\">Vito Iacopelli · Full pizza-making walkthrough</text>\n\n      See the dough preparation, shaping, toppings and baking process together.\n\n      <text><icon name=\"youtube\" size=\"sm\" inline/> [Watch on YouTube](https://www.youtube.com/watch?v=xjODclCGtR4)</text>\n    </box>\n  </row>\n</box>\n\nMy recommendation: **Watch video #1 first.** Allow roughly 1–2 days for the full fermentation process, and use a kitchen scale for accurate measurements. If you're using a regular home oven rather than a dedicated pizza oven, preheat it to its maximum temperature with a pizza steel or stone inside.",
+  "products": [],
+  "insights": {
+    "model_routing": {
+      "requested": "auto",
+      "resolved": "gpt-6-mini",
+      "adjustments": [
+        "auto:smaller_model:reached_message_cap"
+      ]
+    },
+    "hidden_messages": [
+      {
+        "role": "system",
+        "content_type": "text",
+        "exclusive_key": "plugin_upsell"
+      }
+    ],
+    "hidden_empty_messages": 8,
+    "fallback_markdown": "If you want **amazing homemade pizza with a soft, airy, bubbly crust like a proper Italian pizzeria**, I'd start with Vito Iacopelli's poolish method. It uses a pre-ferment to develop flavor and a light, airy texture. 🍕\n\nimage_group{\"query\":[\"Vito Iacopelli How to Make Perfect Pizza Dough For the House New 2021 YouTube thumbnail\"],\"aspect_ratio\":\"9:16\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**1\\. Best overall: Neapolitan pizza dough**\n\nVito Iacopelli · Poolish method · Beginner-friendly with planning\n\nA great starting point for learning pizzeria-style dough, stretching, fermentation and getting those big, airy crust bubbles.\n\nurlWatch on YouTubehttps://www.youtube.com/watch?v=G-jPoROGHGE\n\n---\n\nimage_group{\"query\":[\"Vito Iacopelli Neapolitan Pizza Dough Most Successful Full Process YouTube thumbnail 2024\"],\"aspect_ratio\":\"9:16\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**2\\. Full process: Dough to finished pizza**\n\nVito Iacopelli · Full pizza-making walkthrough\n\nSee the dough preparation, shaping, toppings and baking process together.\n\nurlWatch on YouTubehttps://www.youtube.com/watch?v=xjODclCGtR4\n\nMy recommendation: **Watch video \\#1 first.** Allow roughly 1–2 days for the full fermentation process, and use a kitchen scale for accurate measurements. If you're using a regular home oven rather than a dedicated pizza oven, preheat it to its maximum temperature with a pizza steel or stone inside.",
+    "image_queries": [
+      {
+        "query": "Vito Iacopelli How to Make Perfect Pizza Dough For the House New 2021 YouTube thumbnail",
+        "aspectRatio": "9:16",
+        "maxWidth": "124px"
+      },
+      {
+        "query": "Vito Iacopelli Neapolitan Pizza Dough Most Successful Full Process YouTube thumbnail 2024",
+        "aspectRatio": "9:16",
+        "maxWidth": "124px"
+      }
+    ]
+  },
+  "diagnostics": {
+    "input": "sse",
+    "event_types": {
+      "delta_encoding": 1,
+      "message": 19,
+      "delta": 25
+    },
+    "op_counts": {
+      "add": 26,
+      "patch": 8,
+      "append": 25,
+      "replace": 21,
+      "remove": 1
+    },
+    "unknown_ops": {},
+    "errors": [],
+    "other_event_types": {
+      "resume_conversation_token": 1,
+      "title_generation": 2,
+      "message_marker": 4,
+      "url_moderation": 8,
+      "server_ste_metadata": 1,
+      "message_stream_complete": 1,
+      "conversation_detail_metadata": 1
+    },
+    "messages": 16,
+    "tool_calls": [
+      {
+        "recipient": "web.run",
+        "text": ""
+      }
+    ],
+    "content_types": {
+      "text": 13,
+      "model_editable_context": 1,
+      "thoughts": 1,
+      "reasoning_recap": 1
+    }
+  },
+  "stats": {
+    "fanout_queries": 1,
+    "sources_total": 15,
+    "retrieved": 15,
+    "cited": 0,
+    "retrieved_not_cited": 15,
+    "cited_not_in_retrieved": 0,
+    "supporting_only": 0,
+    "linked": 2,
+    "linked_only": 0,
+    "long_snippets": 0,
+    "youtube": 2,
+    "products": 0
+  },
+  "source_file": "chatgpt_2026-10-10T13-34-23-709Z.sse"
+}

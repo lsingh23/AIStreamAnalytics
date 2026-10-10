@@ -17,9 +17,10 @@ Capture the raw answer streams from ChatGPT, Claude, Perplexity and Gemini in th
    - fan-out search queries
    - sources, flagged as retrieved, cited, supporting or linked, with snippets and cited spans
    - reasoning/thinking text and the final answer
+   - shopping products (title, price, merchant) and hidden metadata the page doesn't show (ChatGPT: model routing, answer parts the renderer dropped, entity labels, image lookups, hidden system messages, queued surveys)
    - stats (e.g. retrieved-but-not-cited, cited-but-not-retrieved, YouTube sources) and parser diagnostics
 
-3. **Report** – render a result as HTML + Markdown, or run the local dashboard that watches your downloads folder and parses captures as they arrive.
+3. **Report** – render a result as HTML + Markdown, or run the local dashboard that watches your downloads folder and parses captures as they arrive. Stored conversations (ChatGPT, Claude) and DevTools HAR exports (`*.har`) dropped in the folder are picked up too; from a HAR only the response bodies and request URL/body are kept, never headers or cookies.
 
 ## Requirements
 
@@ -36,6 +37,9 @@ python3 -m extractor inspect data/raw/claude_X.sse
 
 # raw capture -> normalized JSON (platform auto-detected; meta.json picked up if next to the file)
 python3 -m extractor parse data/raw/chatgpt_X.sse -o data/out/chatgpt_X.json [--platform chatgpt] [--meta X.meta.json]
+
+# DevTools HAR export -> capture files in data/raw (bodies only; headers and cookies are dropped)
+python3 -m extractor har ~/Downloads/chatgpt.com.har
 
 # normalized JSON -> .html + .md next to it
 python3 -m extractor render data/out/chatgpt_X.json
@@ -57,12 +61,13 @@ These are private web-app APIs and change without notice. When a capture stops p
 ```
 capture/              userscript (legacy/ holds the original ChatGPT-only version)
 extractor/
-  __main__.py         CLI: parse, render, inspect, serve
+  __main__.py         CLI: parse, render, inspect, serve, har
   schema.py           Source / Result dataclasses, URL normalization
   sse.py, connect.py  SSE and Connect-RPC (JSON + schema-less protobuf) decoders
   adapters/           one adapter per platform
   render.py           HTML / Markdown reports
   dashboard.py        downloads watcher + local web server
+  har.py              HAR export -> capture files
 tests/                unit tests with hand-made streams
 data/out/             sample normalized outputs
 ```

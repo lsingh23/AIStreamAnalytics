@@ -1,0 +1,804 @@
+{
+  "platform": "chatgpt",
+  "prompt": "youtube: how to make the best pizza dough at home",
+  "model": "gpt-6-mini",
+  "captured_at": "2026-10-10T13:19:56.140Z",
+  "conversation_id": "6aca3480-4c7c-83ee-9070-c9c266a1cb4c",
+  "fanout_queries": [
+    "YouTube best homemade pizza dough recipe cold fermentation Kenji Lopez Alt Vito Iacopelli"
+  ],
+  "sources": [
+    {
+      "url": "https://glasp.co/youtube/u7Hd6ZzKgBM",
+      "title": "How to Make Double-Fermented Poolish Pizza Dough | Glasp",
+      "snippet": "",
+      "pub_date": "2021-06-11",
+      "attribution": "glasp.co",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search1"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 202,
+          "end": 259,
+          "matched_text": "turn453009search1"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "glasp.co"
+    },
+    {
+      "url": "https://www.christinascucina.com/my-mothers-favorite-pizza/comment-page-15/",
+      "title": "Best Homemade Pizza Dough Recipe (Authentic Neapolitan Style) - Authentic Italian & Scottish Recipes & Travel - Christina's Cucina",
+      "snippet": "",
+      "pub_date": "2022-03-19",
+      "attribution": "www.christinascucina.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search4"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 2297,
+          "end": 2353,
+          "matched_text": "turn453009search4"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "christinascucina.com"
+    },
+    {
+      "url": "https://www.christinascucina.com/my-mothers-favorite-pizza/",
+      "title": "Best Homemade Pizza Dough Recipe (Authentic Neapolitan Style) - Authentic Italian & Scottish Recipes & Travel - Christina's Cucina",
+      "snippet": "",
+      "pub_date": "2022-03-19",
+      "attribution": "www.christinascucina.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search10"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 202,
+          "end": 259,
+          "matched_text": "turn453009search10"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "christinascucina.com"
+    },
+    {
+      "url": "https://yumlore.com/recipes/classic-neapolitan-pizza-dough",
+      "title": "Classic Neapolitan Pizza Dough From Scratch (4 Ingredients) — Yumlore",
+      "snippet": "",
+      "pub_date": "2026-09-15",
+      "attribution": "yumlore.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search5"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 2297,
+          "end": 2353,
+          "matched_text": "turn453009search5"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "yumlore.com"
+    },
+    {
+      "url": "https://frienji.kenjilopezalt.com/posts/best-tool-for-is-169063508",
+      "title": "The Best Tool for Flatbread and Pizza is in Your Back Yard |  J. Kenji López-Alt auf Patreon",
+      "snippet": "",
+      "pub_date": "2026-09-10",
+      "attribution": "frienji.kenjilopezalt.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search0"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "frienji.kenjilopezalt.com"
+    },
+    {
+      "url": "https://www.seriouseats.com/homemade-pizza-recipes-11901242",
+      "title": "12 Homemade Pizza Recipes Better Than Delivery",
+      "snippet": "This article from Serious Eats, published on February 8, 2026, features 12 standout homemade pizza recipes organized by style and complexity. It highlights the flexibility and creativity possible when making pizza at home—from authentic Neapolitan and New York-style doughs to creative regional variations and quick adaptations. The recipes range from classic Neapolitan and New York-style white pizzas to rich specialties like Vodka Pizza and Meatball Pizza. Unique regional creations include NJ-Style Mustard Pie, St. Louis-Style Pizza with Provel cheese, Iowa Taco Pizza with taco toppings on pizza crust, and the famed Detroit-Style Pan Pizza known for its caramelized cheese edges. The article also includes quicker methods like Foolproof Pan Pizza, French Bread Pizza, and an ultra-crisp Bar-Style Tortilla Pizza for weeknight convenience. Each recipe includes specific tips—like cold fermentation, skillet use, or the right flour—to ensure success regardless of experience level or equipment.",
+      "pub_date": "2026-02-08",
+      "attribution": "www.seriouseats.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009news13"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "long",
+          "length": 999,
+          "text": "This article from Serious Eats, published on February 8, 2026, features 12 standout homemade pizza recipes organized by style and complexity. It highlights the flexibility and creativity possible when making pizza at home—from authentic Neapolitan and New York-style doughs to creative regional variations and quick adaptations. The recipes range from classic Neapolitan and New York-style white pizzas to rich specialties like Vodka Pizza and Meatball Pizza. Unique regional creations include NJ-Style Mustard Pie, St. Louis-Style Pizza with Provel cheese, Iowa Taco Pizza with taco toppings on pizza crust, and the famed Detroit-Style Pan Pizza known for its caramelized cheese edges. The article also includes quicker methods like Foolproof Pan Pizza, French Bread Pizza, and an ultra-crisp Bar-Style Tortilla Pizza for weeknight convenience. Each recipe includes specific tips—like cold fermentation, skillet use, or the right flour—to ensure success regardless of experience level or equipment."
+        }
+      ],
+      "extra": {
+        "thumbnail_url": "https://images.openai.com/static-rsc-1/Sghpe8eEs2tXnT-etqoWlvQ6_5RmE0oYbDSd2kwhS8KzNqUQJe16hBJFebZunfEYa0DHm7cBw3ivnpHjCQrSsaN80piXt5hAqDmakB0WOqSaD6GdcpFk3mU3CDKRv7f5KD6kFyetW2Z_oLOdyJA7OxoLolJOqtt0AdBFcIB8CAvBqR1JMofbaqmgZMLIerY7_sbVtBNvzYigdU1N04_j0ClEbpWDxS6_COi0oazXde2W-ugZxd2ktNQhcGU8d0r7Z-RCQyzXBcbHstEs6whPoC-ofE6DdM0MK96be700Y30DKj_BNvy1IANK4rIaXhE_gaV5wcGT-ei3nSHjLPCh35Hibe10EGLXh8YIGiGSxfIeT2BVUyVsXDXJ2BS741HrzmuuCkmEYJ_vZovP72jzv__Sn68uzPJb76Rv2ZIWLChpfcynl9hR6NRAoB_bQXmQ",
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "seriouseats.com"
+    },
+    {
+      "url": "https://www.kaikaibook.com.au/index.php/recipes/videos-how-to-make-homemade-pizza/912-how-to-make-perfect-pizza-dough-with-dry-yeast-for-the-house",
+      "title": "The KaiKai Book - How to Make Perfect Pizza Dough With DRY YEAST - For the House",
+      "snippet": "",
+      "pub_date": "2020-04-20",
+      "attribution": "www.kaikaibook.com.au",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search2"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "kaikaibook.com.au"
+    },
+    {
+      "url": "https://www.viaouest.com/YTdata-G-jPoROGHGE.html",
+      "title": "Video publiee : How to make perfect pizza dough - for the house⎮new 2021 - Vito",
+      "snippet": "",
+      "pub_date": "2020-11-29",
+      "attribution": "www.viaouest.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search3"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "viaouest.com"
+    },
+    {
+      "url": "https://www.pizzamaking.com/forum/index.php?topic=61391.0",
+      "title": "Pizza Making Forum - Neapolitan-style Pizza Recipes - Vito Iacopelli",
+      "snippet": "",
+      "pub_date": "2020-03-24",
+      "attribution": "www.pizzamaking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search6"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "pizzamaking.com"
+    },
+    {
+      "url": "https://copycatcooking.com/vito-iacopelli-dough-recipe/",
+      "title": "Vito Iacopelli Dough Recipe - CopyCat Cooking",
+      "snippet": "",
+      "pub_date": "2026-04-12",
+      "attribution": "copycatcooking.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search7"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "copycatcooking.com"
+    },
+    {
+      "url": "https://chuysmenu.com/vito-iacopelli-pizza-dough-recipe/",
+      "title": "Vito Iacopelli Pizza Dough Recipe - Chuy's Menu",
+      "snippet": "",
+      "pub_date": "2026-02-13",
+      "attribution": "chuysmenu.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search8"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "chuysmenu.com"
+    },
+    {
+      "url": "https://www.youtubeuniversity.net/watch/R8V0WYS-f7I?topic=pizza",
+      "title": "YouTube University — Every expert on Earth uploaded. This is the index.",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "www.youtubeuniversity.net",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search9"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "youtubeuniversity.net"
+    },
+    {
+      "url": "https://www.chefchef.app/en/recipe/Pizza-Dough-u7Hd6ZzKgBM",
+      "title": "Pizza Dough",
+      "snippet": "",
+      "pub_date": "2021-06-11",
+      "attribution": "www.chefchef.app",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009search11"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "chefchef.app"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/1w3vxfw/learning_cold_ferment/",
+      "title": "Learning - cold ferment",
+      "snippet": "",
+      "pub_date": "2026-09-01",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009reddit14"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/1d539bk",
+      "title": "How to get big crust",
+      "snippet": "",
+      "pub_date": "2024-05-31",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009reddit15"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/1jxwosl",
+      "title": "Man this stuff is so good! If you have feedback please let me know, I was just following videos",
+      "snippet": "",
+      "pub_date": "2025-04-13",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009reddit16"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/191lme0",
+      "title": "I participated in a in-person masterclass by Vito Iacopelli",
+      "snippet": "",
+      "pub_date": "2024-01-08",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009reddit17"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://www.reddit.com/r/Pizza/comments/1b07e9u",
+      "title": "I made Vito Iacopelli's poolish dough pizza, sawft and craunchy at the same time! Sauce, Mozz, Basil, 45 hour dough.",
+      "snippet": "",
+      "pub_date": "2024-02-26",
+      "attribution": "www.reddit.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009reddit18"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reddit.com"
+    },
+    {
+      "url": "https://www.foodandwine.com/nancy-silverton-favorite-pizza-toppings-12161407",
+      "title": "5 Toppings Nancy Silverton Always Keeps on Hand for Pizza Night",
+      "snippet": "Renowned chef Nancy Silverton, co-founder of Pizzeria Mozza in Los Angeles, shares her top five essential pizza toppings for a simple yet delicious homemade pizza night. Emphasizing simplicity and high-quality ingredients, Silverton recommends always having dried oregano for its earthy and peppery depth, and chile flakes such as Cobanero chili for smoky heat and fruity aroma. For cheese, she prefers fior di latte mozzarella, a cow’s milk alternative to mozzarella di bufala, that melts well without making the pizza soggy. Fresh Genovese basil adds aromatic sweetness and is ideal for a classic Margherita pizza. Lastly, fennel sausage, a favorite from Pizzeria Mozza, brings savory flavor and is best freshly crumbled and browned. Silverton’s philosophy of using the best available ingredients and keeping pizza toppings minimal makes pizza night both accessible and gourmet.",
+      "pub_date": "2026-10-08",
+      "attribution": "www.foodandwine.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn453009news12"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "answer_sources",
+          "kind": "long",
+          "length": 880,
+          "text": "Renowned chef Nancy Silverton, co-founder of Pizzeria Mozza in Los Angeles, shares her top five essential pizza toppings for a simple yet delicious homemade pizza night. Emphasizing simplicity and high-quality ingredients, Silverton recommends always having dried oregano for its earthy and peppery depth, and chile flakes such as Cobanero chili for smoky heat and fruity aroma. For cheese, she prefers fior di latte mozzarella, a cow’s milk alternative to mozzarella di bufala, that melts well without making the pizza soggy. Fresh Genovese basil adds aromatic sweetness and is ideal for a classic Margherita pizza. Lastly, fennel sausage, a favorite from Pizzeria Mozza, brings savory flavor and is best freshly crumbled and browned. Silverton’s philosophy of using the best available ingredients and keeping pizza toppings minimal makes pizza night both accessible and gourmet."
+        }
+      ],
+      "extra": {
+        "thumbnail_url": "https://images.openai.com/static-rsc-1/cmQOlslo3S8jvE0Ho2s7-XvfAiqCI7C4Rko78v9l3GOWc_iFlqJSVINCpIRrkxHOzK-JR1BavHCAH8Urf_lK5dAqHh2sKiuhUWPQ0Jb_B9my3FCDPoM_q1cXE96f41wh8PlzClFlAvzdAyejy5_OUP_J_-NpRiM3wM3_8FhhWFfpi3PL-b7fg7r9U1IwDxr859__nz7fQKIlvg3_w9qFxkRkaHD6k1twqjUZeyP3lExR49SXdXHwO-ReH1aU9Uo3ZRJM352jGlpdOUR9KHTWsZc6QGF_v8alaURzSUPODAi3gWYXy7Bw49ePMvPDrZyXRN-OLQUWeTVhLdbexpPsFg",
+        "found_in": [
+          "answer_sources"
+        ]
+      },
+      "domain": "foodandwine.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u7Hd6ZzKgBM",
+      "title": "",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "",
+      "type": "youtube",
+      "retrieved": false,
+      "cited": false,
+      "supporting": false,
+      "linked": true,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "link_spans": [
+          {
+            "start": 872,
+            "end": 935
+          }
+        ]
+      },
+      "domain": "youtube.com"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=G-jPoROGHGE",
+      "title": "",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "",
+      "type": "youtube",
+      "retrieved": false,
+      "cited": false,
+      "supporting": false,
+      "linked": true,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "link_spans": [
+          {
+            "start": 1454,
+            "end": 1517
+          }
+        ]
+      },
+      "domain": "youtube.com"
+    },
+    {
+      "url": "https://www.youtube.com/results?search_query=Vito+Iacopelli+Making+Your+Own+New+York+Style+Pizza+at+Home",
+      "title": "",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "",
+      "type": "web",
+      "retrieved": false,
+      "cited": false,
+      "supporting": false,
+      "linked": true,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "link_spans": [
+          {
+            "start": 1925,
+            "end": 2051
+          }
+        ]
+      },
+      "domain": "youtube.com"
+    }
+  ],
+  "reasoning": [
+    "Searched 13 websites",
+    "Worked for 4s"
+  ],
+  "answer": "If you want **restaurant-quality pizza dough at home**, I'd start with Vito Iacopelli's method. He teaches Neapolitan-style pizza with a soft, airy crust, using a poolish starter and long fermentation. <Cite refs={[\"turn453009search1\",\"turn453009search10\"]}/>\n\n## Best YouTube videos to watch\n\n<box gap={4}>\n  <row align=start gap={3}>\n    <AsyncImage query=\"Vito Iacopelli How to Make Double-Fermented Poolish Pizza Dough YouTube thumbnail\" aspectRatio=\"16:9\" width=\"144px\"/>\n    <box flex=\"1\" gap={1}>\n      **1. <Entity value=\"Vito Iacopelli\" category=\"people\" disambig=\"Italian pizza chef and YouTube creator\"/> — Double-Fermented Poolish Pizza Dough**\n\n      <badge color=\"success\">My top pick</badge>\n\n      <text color=\"secondary\" size=\"sm\">About 45 hours · Intermediate</text>\n\n      Great for developing flavor and getting that airy, pizzeria-style crust.\n\n      [Watch on YouTube](https://www.youtube.com/watch?v=u7Hd6ZzKgBM)\n    </box>\n  </row>\n  <divider color=\"subtle\"/>\n  <row align=start gap={3}>\n    <AsyncImage query=\"Vito Iacopelli How to Make Perfect Pizza Dough for the House NEW 2021 YouTube thumbnail\" aspectRatio=\"16:9\" width=\"144px\"/>\n    <box flex=\"1\" gap={1}>\n      **2. Vito Iacopelli — Perfect Pizza Dough for the Home Oven**\n\n      <text color=\"secondary\" size=\"sm\">About 22 minutes · Home-kitchen focused</text>\n\n      A good choice if you're baking in an ordinary kitchen oven rather than a professional pizza oven.\n\n      [Watch on YouTube](https://www.youtube.com/watch?v=G-jPoROGHGE)\n    </box>\n  </row>\n  <divider color=\"subtle\"/>\n  <row align=start gap={3}>\n    <AsyncImage query=\"Vito Iacopelli Making Your Own New York Style Pizza at Home YouTube thumbnail\" aspectRatio=\"16:9\" width=\"144px\"/>\n    <box flex=\"1\" gap={1}>\n      **3. Vito Iacopelli — New York-Style Pizza at Home**\n\n      Better if you prefer a thinner, crispier, foldable slice rather than a soft Neapolitan crust.\n\n      [Find it on YouTube](https://www.youtube.com/results?search_query=Vito+Iacopelli+Making+Your+Own+New+York+Style+Pizza+at+Home)\n    </box>\n  </row>\n</box>\n\n**My advice:** Watch video #2 first if you're a beginner. Use a kitchen scale, give the dough time to ferment in the fridge, and preheat your oven as hot as it goes. Those details matter as much as the recipe itself. <Cite refs={[\"turn453009search4\",\"turn453009search5\"]}/>",
+  "products": [],
+  "insights": {
+    "model_routing": {
+      "requested": "auto",
+      "resolved": "gpt-6-mini",
+      "adjustments": [
+        "auto:smaller_model:reached_message_cap"
+      ]
+    },
+    "hidden_messages": [
+      {
+        "role": "system",
+        "content_type": "text",
+        "exclusive_key": "plugin_upsell"
+      }
+    ],
+    "fallback_markdown": "If you want **restaurant-quality pizza dough at home**, I'd start with Vito Iacopelli's method. He teaches Neapolitan-style pizza with a soft, airy crust, using a poolish starter and long fermentation. citeturn453009search1turn453009search10\n\n## Best YouTube videos to watch\n\nimage_group{\"query\":[\"Vito Iacopelli How to Make Double-Fermented Poolish Pizza Dough YouTube thumbnail\"],\"aspect_ratio\":\"16:9\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**1\\. entity[\"people\",\"Vito Iacopelli\",\"Italian pizza chef and YouTube creator\"] — Double-Fermented Poolish Pizza Dough**\n\n(My top pick)\n\nAbout 45 hours · Intermediate\n\nGreat for developing flavor and getting that airy, pizzeria-style crust.\n\nurlWatch on YouTubehttps://www.youtube.com/watch?v=u7Hd6ZzKgBM\n\n---\n\nimage_group{\"query\":[\"Vito Iacopelli How to Make Perfect Pizza Dough for the House NEW 2021 YouTube thumbnail\"],\"aspect_ratio\":\"16:9\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**2\\. Vito Iacopelli — Perfect Pizza Dough for the Home Oven**\n\nAbout 22 minutes · Home-kitchen focused\n\nA good choice if you're baking in an ordinary kitchen oven rather than a professional pizza oven.\n\nurlWatch on YouTubehttps://www.youtube.com/watch?v=G-jPoROGHGE\n\n---\n\nimage_group{\"query\":[\"Vito Iacopelli Making Your Own New York Style Pizza at Home YouTube thumbnail\"],\"aspect_ratio\":\"16:9\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**3\\. Vito Iacopelli — New York-Style Pizza at Home**\n\nBetter if you prefer a thinner, crispier, foldable slice rather than a soft Neapolitan crust.\n\nurlFind it on YouTubehttps://www.youtube.com/results?search_query=Vito+Iacopelli+Making+Your+Own+New+York+Style+Pizza+at+Home\n\n**My advice\\:** Watch video \\#2 first if you're a beginner. Use a kitchen scale, give the dough time to ferment in the fridge, and preheat your oven as hot as it goes. Those details matter as much as the recipe itself. citeturn453009search4turn453009search5",
+    "entities": [
+      {
+        "value": "Vito Iacopelli",
+        "category": "people",
+        "disambig": "Italian pizza chef and YouTube creator"
+      }
+    ],
+    "image_queries": [
+      {
+        "query": "Vito Iacopelli How to Make Double-Fermented Poolish Pizza Dough YouTube thumbnail",
+        "aspectRatio": "16:9",
+        "width": "144px"
+      },
+      {
+        "query": "Vito Iacopelli How to Make Perfect Pizza Dough for the House NEW 2021 YouTube thumbnail",
+        "aspectRatio": "16:9",
+        "width": "144px"
+      },
+      {
+        "query": "Vito Iacopelli Making Your Own New York Style Pizza at Home YouTube thumbnail",
+        "aspectRatio": "16:9",
+        "width": "144px"
+      }
+    ]
+  },
+  "diagnostics": {
+    "input": "conversation_json",
+    "format": "messages",
+    "turns": 1,
+    "messages": 9,
+    "messages_total": 9,
+    "tool_calls": [
+      {
+        "recipient": "web.run",
+        "text": ""
+      },
+      {
+        "recipient": "web.run",
+        "text": ""
+      }
+    ],
+    "content_types": {
+      "text": 7,
+      "thoughts": 1,
+      "reasoning_recap": 1
+    }
+  },
+  "stats": {
+    "fanout_queries": 1,
+    "sources_total": 22,
+    "retrieved": 19,
+    "cited": 4,
+    "retrieved_not_cited": 15,
+    "cited_not_in_retrieved": 0,
+    "supporting_only": 0,
+    "linked": 3,
+    "linked_only": 3,
+    "long_snippets": 2,
+    "youtube": 2,
+    "products": 0
+  },
+  "source_file": "chatgpt_2026-10-10T13-19-56-140Z.conversation.json"
+}

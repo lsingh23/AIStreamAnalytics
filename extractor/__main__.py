@@ -4,6 +4,7 @@
   python3 -m extractor parse   data/raw/chatgpt_X.sse -o data/out/pizza.json [--meta X.meta.json]
   python3 -m extractor render  data/out/pizza.json                # -> pizza.html + pizza.md next to it
   python3 -m extractor serve   [--watch ~/Downloads] [--port 8765]  # auto-parse new captures + local dashboard
+  python3 -m extractor har     ~/Downloads/chatgpt.com.har          # DevTools HAR -> capture files in data/raw
 """
 from __future__ import annotations
 
@@ -83,6 +84,14 @@ def cmd_inspect(args: argparse.Namespace) -> None:
         print(f"  {n:4d}  {p}")
 
 
+def cmd_har(args: argparse.Namespace) -> None:
+    from .har import extract
+    written = extract(Path(args.file).expanduser(), Path(args.out))
+    for f in written:
+        print(f"  wrote {f}")
+    print(f"{len(written)} capture(s) extracted (headers and cookies are not copied)")
+
+
 def cmd_serve(args: argparse.Namespace) -> None:
     from .dashboard import serve
     serve(Path(args.watch), Path("data/raw"), Path("data/out"), args.port)
@@ -105,6 +114,10 @@ def main(argv: list[str] | None = None) -> None:
     i.add_argument("--platform", default="auto", choices=["auto", *ADAPTERS])
     i.add_argument("--head", type=int, default=15)
     i.set_defaults(func=cmd_inspect)
+    h = sub.add_parser("har", help="extract answer streams / stored conversations from a DevTools HAR export")
+    h.add_argument("file")
+    h.add_argument("--out", default="data/raw")
+    h.set_defaults(func=cmd_har)
     s = sub.add_parser("serve", help="watch downloads folder, auto-parse captures, serve local dashboard")
     s.add_argument("--watch", default="~/Downloads")
     s.add_argument("--port", type=int, default=8765)

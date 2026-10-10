@@ -1,0 +1,557 @@
+{
+  "platform": "chatgpt",
+  "prompt": "standing desk",
+  "model": "gpt-6-mini",
+  "captured_at": "2026-10-10T13:24:13.163Z",
+  "conversation_id": "6aca3c4b-c2d4-83ee-81cd-d64b7a7518c0",
+  "fanout_queries": [
+    "best standing desks India electric height adjustable desk buying guide 2026"
+  ],
+  "sources": [
+    {
+      "url": "https://interiordecordesigns.in/articles/best-electric-height-adjustable-standing-desk-india",
+      "title": "Best Electric Height-Adjustable Standing Desks in India: Sizes, Types & Buying Guide",
+      "snippet": "",
+      "pub_date": "2026-08-12",
+      "attribution": "interiordecordesigns.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search0"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 2261,
+          "end": 2317,
+          "matched_text": "turn810870search0"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "interiordecordesigns.in"
+    },
+    {
+      "url": "https://www.producthunter.in/home-living/best-standing-desks-india",
+      "title": "Best Standing Desks in India (2026)",
+      "snippet": "",
+      "pub_date": "2026-03-29",
+      "attribution": "www.producthunter.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search1"
+      ],
+      "cited_spans": [
+        {
+          "type": "cite_tag",
+          "start": 2261,
+          "end": 2317,
+          "matched_text": "turn810870search1"
+        }
+      ],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "producthunter.in"
+    },
+    {
+      "url": "https://adify.store/blog/best-standing-desks-india-2026",
+      "title": "Best Standing Desks India 2026 - Electric & Manual Ranked | Adify",
+      "snippet": "",
+      "pub_date": "2026-04-06",
+      "attribution": "adify.store",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search2"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "adify.store"
+    },
+    {
+      "url": "https://adify.store/blog/best-height-adjustable-standing-desk-under-20000-india-2026",
+      "title": "Best Height Adjustable Desk Under 20000 India 2026 - Budget Sit Stand | Adify",
+      "snippet": "",
+      "pub_date": "2026-08-30",
+      "attribution": "adify.store",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search6"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "adify.store"
+    },
+    {
+      "url": "https://adify.store/blog/best-standing-desk-for-families-india-2026",
+      "title": "Best Standing Desk for Families India 2026 - Shared Home Office Desks | Adify",
+      "snippet": "",
+      "pub_date": "2026-09-21",
+      "attribution": "adify.store",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search10"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "adify.store"
+    },
+    {
+      "url": "https://www.woodensure.com/blog/best-height-adjustable-standing-desk-india",
+      "title": "Height adjustable Standing Desk in India (2026): Prices & Buying Guide",
+      "snippet": "",
+      "pub_date": "2026-03-25",
+      "attribution": "www.woodensure.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search3"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "woodensure.com"
+    },
+    {
+      "url": "https://www.guiderr.in/guides/2026-05-22-top-5-electric-standing-desks-in-india-2026-practical-guide",
+      "title": "Which Motorised Standing Desk Should You Buy in India? 5 Top Picks (2026) | Guiderr",
+      "snippet": "",
+      "pub_date": "2026-05-23",
+      "attribution": "www.guiderr.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search4"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "guiderr.in"
+    },
+    {
+      "url": "https://reviehub.in/best-standing-desk-in-india-2026-top-5-tested-ranked/",
+      "title": "Best Standing Desk in India 2026: Top 5 Tested & Ranked – RevieHub India",
+      "snippet": "",
+      "pub_date": "2026-10-09",
+      "attribution": "reviehub.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search5"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reviehub.in"
+    },
+    {
+      "url": "https://reviehub.in/5-best-standing-desks-in-india-2026-tested-ranked/",
+      "title": "5 Best Standing Desks in India 2026: Tested & Ranked – RevieHub India",
+      "snippet": "",
+      "pub_date": "2026-10-09",
+      "attribution": "reviehub.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search7"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reviehub.in"
+    },
+    {
+      "url": "https://reviehub.in/5-best-standing-desks-in-india-2026-expert-tested/",
+      "title": "5 Best Standing Desks in India 2026 | Expert Tested – RevieHub India",
+      "snippet": "",
+      "pub_date": "2026-10-09",
+      "attribution": "reviehub.in",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search11"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "reviehub.in"
+    },
+    {
+      "url": "https://lukzer.com/blogs/news/best-height-adjustable-desk-for-home-office-india-2026-guide",
+      "title": "Best Height Adjustable Desk for Home Office in India (2026) | Lukzer",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "lukzer.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search8"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "lukzer.com"
+    },
+    {
+      "url": "https://www.bestpricebuys.com/best-electric-height-adjustable-desks-in-india",
+      "title": "10 Best Electric Height Adjustable Desks in India 2026 - BestPriceBuys.com",
+      "snippet": "",
+      "pub_date": "2026-08-22",
+      "attribution": "www.bestpricebuys.com",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [
+        "turn810870search9"
+      ],
+      "cited_spans": [],
+      "snippets": [
+        {
+          "location": "search_results",
+          "kind": "empty",
+          "length": 0,
+          "text": ""
+        }
+      ],
+      "extra": {
+        "found_in": [
+          "search_results",
+          "cot_panel",
+          "answer_sources"
+        ]
+      },
+      "domain": "bestpricebuys.com"
+    }
+  ],
+  "reasoning": [
+    "Searched 8 websites",
+    "Worked for 16s"
+  ],
+  "answer": "If you're looking to buy a standing desk in India for working from home, I'd recommend an **electric height-adjustable desk** so you can switch between sitting and standing with the press of a button.\n\n## Standing desks worth considering\n\nThese are current listings to compare; prices and availability can change.\n\n<box gap={4}>\n  <row align=start gap={3}>\n    <AsyncImage ref=\"turn0product0\" aspectRatio=\"4:3\" width=\"124px\"/>\n    <box flex=\"1\" gap={1}>\n      **Best budget option**\n\n      <Entity category=\"product\" ref=\"turn0product0\" value={turn0product0.title}/>\n\n      <title size=\"lg\">{turn0product0.displayed_price}</title>\n      <text color=\"secondary\" size=\"sm\">Electric adjustment, memory presets and a compact home-office setup.</text>\n      <text><Link url={turn0product0.product_page.uri} title=\"Check price and details\"/></text>\n    </box>\n  </row>\n  <divider color=\"subtle\"/>\n  <row align=start gap={3}>\n    <AsyncImage ref=\"turn0product1\" aspectRatio=\"4:3\" width=\"124px\"/>\n    <box flex=\"1\" gap={1}>\n      **Dual-motor option**\n\n      <Entity category=\"product\" ref=\"turn0product1\" value={turn0product1.title}/>\n\n      <title size=\"lg\">{turn0product1.displayed_price}</title>\n      <text color=\"secondary\" size=\"sm\">Worth comparing if you have a heavier monitor setup or want smoother height adjustment.</text>\n      <text><Link url={turn0product1.product_page.uri} title=\"Check price and details\"/></text>\n    </box>\n  </row>\n  <divider color=\"subtle\"/>\n  <row align=start gap={3}>\n    <AsyncImage ref=\"turn0product2\" aspectRatio=\"4:3\" width=\"124px\"/>\n    <box flex=\"1\" gap={1}>\n      **Another budget-friendly option**\n\n      <Entity category=\"product\" ref=\"turn0product2\" value={turn0product2.title}/>\n\n      <title size=\"lg\">{turn0product2.displayed_price}</title>\n      <text color=\"secondary\" size=\"sm\">Electric sit-stand desk for everyday study or work.</text>\n      <text><Link url={turn0product2.product_page.uri} title=\"Check price and details\"/></text>\n    </box>\n  </row>\n</box>\n\nThese are starting points, not hands-on-tested rankings. Before buying, check the desk's stability at standing height, usable tabletop size, height range and motor warranty. A 120 × 60 cm top is a reasonable starting point for a laptop and one monitor. <Cite refs={[\"turn810870search0\",\"turn810870search1\"]}/>\n\n## Let me narrow it down\n\n{@body const [budget,setBudget] = DIL.useState(\"₹10,000–₹15,000\")}\n{@body const [type,setType] = DIL.useState(\"Electric desk\")}\n{@body const [setup,setSetup] = DIL.useState(\"Laptop + one monitor\")}\n<box border radius=\"xl\" padding={4} gap={4}>\n  <text weight=\"medium\">1. What's your budget?</text>\n  <radio-group value={budget} onChange={setBudget} direction=\"col\">\n    <radio value=\"Under ₹10,000\">Under ₹10,000</radio>\n    <radio value=\"₹10,000–₹15,000\">₹10,000–₹15,000</radio>\n    <radio value=\"₹15,000–₹25,000\">₹15,000–₹25,000</radio>\n    <radio value=\"Above ₹25,000\">Above ₹25,000</radio>\n  </radio-group>\n  <divider color=\"subtle\"/>\n  <text weight=\"medium\">2. What type do you want?</text>\n  <radio-group value={type} onChange={setType} direction=\"col\">\n    <radio value=\"Electric desk\">Full desk, electric height adjustment</radio>\n    <radio value=\"Manual desk\">Full desk, manual crank</radio>\n    <radio value=\"Desk converter\">A riser for my existing desk</radio>\n  </radio-group>\n  <divider color=\"subtle\"/>\n  <text weight=\"medium\">3. What will you put on it?</text>\n  <radio-group value={setup} onChange={setSetup} direction=\"col\">\n    <radio value=\"Laptop only\">Laptop only</radio>\n    <radio value=\"Laptop + one monitor\">Laptop + one monitor</radio>\n    <radio value=\"Dual monitors + PC\">Two monitors + desktop PC</radio>\n  </radio-group>\n  <button block onClick={() => GenUI.issueNewTurn(\"Recommend the best standing desks available in India. Budget: \"+budget+\". Type: \"+type+\". Setup: \"+setup+\". Compare current prices, specifications, stability, warranty and purchase links.\")}>Find the best desk for me</button>\n</box>",
+  "products": [
+    {
+      "ref": "turn0product0",
+      "id": "5664397824155196629",
+      "title": "Lukzer Electric Automatic Height Adjustable Sit Stand Desk | Ergonomic Study Table with Digital Display & Memory Preset Option for Home Office (EST-",
+      "price": "₹9,998",
+      "merchants": "Amazon.in",
+      "url": "https://chatgpt.com/?hints=search&q=Lukzer+Electric+Automatic+Height+Adjustable+Sit+Stand+Desk+%7C+Ergonomic+Study+Table+with+Digital+Display+%26+Memory+Preset+Option+for+Home+Office+%28EST-",
+      "image_url": "https://images.openai.com/thumbnails/url/Qs7cUXicDcn_DkJAAADgJ8JkKFtrxNCKuDo__jHdcVTOybXWPU5v1dvU9-_3_XScs9lSlIaix5vxBkv8QlWZzLzmPZLROChzNzLWU7KZ1v-z7AivfJS8mJZltNqZBfTLooyeGUhEEiAwHqnphS10nSY0F1jFxgnHghqtgNeyGkM9dgJ9cr0cBJJ2FzBXJ_usgyWx8TwRbbuHaRqzd53e2nYAyeEHMJk5aQ",
+      "in_answer": true
+    },
+    {
+      "ref": "turn0product1",
+      "id": "4276630492435796179",
+      "title": "The Sleep Company Height Adjustable Desk Dual Motor Strong & Durable",
+      "price": "₹17,990",
+      "merchants": "The Sleep Company + others",
+      "url": "https://chatgpt.com/?hints=search&q=The+Sleep+Company+Height+Adjustable+Desk+Dual+Motor+Strong+%26+Durable",
+      "image_url": "https://images.openai.com/thumbnails/url/d0NphXicDcltCoIwAADQE6kV4RdEZOSkqTGX2L_QOXTV5tLBprfpWN2m3t_3_fRKySl0HCrIOEtFW0s1Ym13k6oVIzYZuDP1g5RMdPv37n_hIW8DQJBfCkUeEJvXCJkuYp5Zhc-OZNl4sRE4AoV315qOKZ4lXF1P8bZCF7ZEvKXnOE_4jagDGF1IIUp0pTGBpmaAYVO6HoIsnQvTZU3w_AFCyDp1",
+      "in_answer": true
+    },
+    {
+      "ref": "turn0product2",
+      "id": "15133981543857583086",
+      "title": "Green Soul Imperium Neo Electric Height Adjustable Table",
+      "price": "₹12,990",
+      "merchants": "Greensoul Ergonomics",
+      "url": "https://chatgpt.com/?hints=search&q=Green+Soul+Imperium+Neo+Electric+Height+Adjustable+Table",
+      "image_url": "https://images.openai.com/thumbnails/url/ftrBO3icDclJDoIwAADAF7G4YAOJMRhSBMHignprsCVQolDagsBvfJa_0bnO91MqxaVjGHlNxMhVTjX1qGd6IVWmGNFJ8zJk2XDO6mLTrv_nuAdq--ScQHIS-x4lZhpsgU9BHyJI0b2mcY6FZ2lNN8FgwaMKjTf5Bq25wjD0IE4GOyrSypViIksc0Vjb4aEDV858fPSAh-bNpc1Sxaj1jC35A_sbOWY",
+      "in_answer": true
+    }
+  ],
+  "insights": {
+    "model_routing": {
+      "requested": "auto",
+      "resolved": "gpt-6-mini",
+      "adjustments": [
+        "auto:smaller_model:reached_message_cap"
+      ]
+    },
+    "hidden_messages": [
+      {
+        "role": "system",
+        "content_type": "text",
+        "exclusive_key": "plugin_upsell"
+      }
+    ],
+    "fallback_markdown": "If you're looking to buy a standing desk in India for working from home, I'd recommend an **electric height-adjustable desk** so you can switch between sitting and standing with the press of a button.\n\n## Standing desks worth considering\n\nThese are current listings to compare; prices and availability can change.\n\nimage_group{\"entity_refs\":[\"turn0product0\"],\"aspect_ratio\":\"4:3\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**Best budget option**\n\nElectric adjustment, memory presets and a compact home-office setup.\n\n---\n\nimage_group{\"entity_refs\":[\"turn0product1\"],\"aspect_ratio\":\"4:3\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**Dual-motor option**\n\nWorth comparing if you have a heavier monitor setup or want smoother height adjustment.\n\n---\n\nimage_group{\"entity_refs\":[\"turn0product2\"],\"aspect_ratio\":\"4:3\",\"layout\":\"carousel\",\"num_per_query\":1}\n\n**Another budget-friendly option**\n\nElectric sit-stand desk for everyday study or work.\n\nThese are starting points, not hands-on-tested rankings. Before buying, check the desk's stability at standing height, usable tabletop size, height range and motor warranty. A 120 × 60 cm top is a reasonable starting point for a laptop and one monitor. citeturn810870search0turn810870search1\n\n## Let me narrow it down\n\n1\\. What's your budget?\n\nUnder ₹10,000\n\n₹10,000–₹15,000\n\n₹15,000–₹25,000\n\nAbove ₹25,000\n\n---\n\n2\\. What type do you want?\n\nFull desk, electric height adjustment\n\nFull desk, manual crank\n\nA riser for my existing desk\n\n---\n\n3\\. What will you put on it?\n\nLaptop only\n\nLaptop + one monitor\n\nTwo monitors + desktop PC\n\n[Find the best desk for me]",
+    "surveys": [
+      {
+        "name": "personality_rating",
+        "question": "Do you like this personality?",
+        "options": [
+          "Yes",
+          "No"
+        ]
+      }
+    ],
+    "render_omissions": [
+      {
+        "component": "Entity",
+        "prop": "value",
+        "action": "omitted_node",
+        "code": "nonstatic_widget_prop",
+        "count": 3
+      },
+      {
+        "component": "Link",
+        "prop": "url",
+        "action": "omitted_node",
+        "code": "nonstatic_widget_prop",
+        "count": 3
+      }
+    ],
+    "entities": [
+      {
+        "category": "product",
+        "ref": "turn0product0",
+        "value": "{turn0product0.title}"
+      },
+      {
+        "category": "product",
+        "ref": "turn0product1",
+        "value": "{turn0product1.title}"
+      },
+      {
+        "category": "product",
+        "ref": "turn0product2",
+        "value": "{turn0product2.title}"
+      }
+    ],
+    "image_queries": [
+      {
+        "ref": "turn0product0",
+        "aspectRatio": "4:3",
+        "width": "124px"
+      },
+      {
+        "ref": "turn0product1",
+        "aspectRatio": "4:3",
+        "width": "124px"
+      },
+      {
+        "ref": "turn0product2",
+        "aspectRatio": "4:3",
+        "width": "124px"
+      }
+    ]
+  },
+  "diagnostics": {
+    "input": "conversation_json",
+    "format": "messages",
+    "turns": 1,
+    "messages": 8,
+    "messages_total": 8,
+    "tool_calls": [
+      {
+        "recipient": "web.run",
+        "text": ""
+      }
+    ],
+    "content_types": {
+      "text": 6,
+      "thoughts": 1,
+      "reasoning_recap": 1
+    }
+  },
+  "stats": {
+    "fanout_queries": 1,
+    "sources_total": 12,
+    "retrieved": 12,
+    "cited": 2,
+    "retrieved_not_cited": 10,
+    "cited_not_in_retrieved": 0,
+    "supporting_only": 0,
+    "linked": 0,
+    "linked_only": 0,
+    "long_snippets": 0,
+    "youtube": 0,
+    "products": 3
+  },
+  "source_file": "chatgpt_2026-10-10T13-24-13-163Z.conversation.json"
+}

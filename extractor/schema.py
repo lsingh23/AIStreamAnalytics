@@ -72,6 +72,9 @@ class Result:
     sources: list[Source] = field(default_factory=list)
     reasoning: list[str] = field(default_factory=list)
     answer: str = ""
+    products: list[dict[str, Any]] = field(default_factory=list)  # shopping cards: ref, title, price, merchants, ...
+    # data the platform sends but does not show: model routing, UI nodes the renderer dropped, entity labels, ...
+    insights: dict[str, Any] = field(default_factory=dict)
     diagnostics: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
@@ -86,8 +89,10 @@ class Result:
             "retrieved_not_cited": sum(s.retrieved and not s.cited for s in self.sources),
             "cited_not_in_retrieved": sum(s.cited and not s.retrieved for s in self.sources),
             "supporting_only": sum(s.supporting and not s.cited for s in self.sources),
+            "linked": sum(s.linked for s in self.sources),
             "linked_only": sum(s.linked and not s.cited and not s.retrieved for s in self.sources),
             "long_snippets": sum(any(v["kind"] == "long" for v in s.snippets) for s in self.sources),
             "youtube": sum(s.type == "youtube" for s in self.sources),
+            "products": len(self.products),
         }
         return d

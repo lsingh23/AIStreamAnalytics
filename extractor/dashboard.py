@@ -16,11 +16,13 @@ from pathlib import Path
 from urllib.parse import unquote
 
 from .adapters import get_adapter
+from .har import extract as extract_har
 from .render import to_html
 
 PLATFORMS = ("chatgpt", "claude", "perplexity", "gemini")  # file prefixes written by capture/ai_capture.user.js
 CAPTURE_GLOBS = tuple(f"{p}_*.{ext}" for p in PLATFORMS for ext in ("sse", "conversation.json", "meta.json"))
 SETTLE_SECONDS = 2.5  # the capture script spaces downloads ~1s apart; wait for the meta file too
+STORED_PLATFORMS = ("chatgpt", "claude")  # adapters that parse the stored-conversation JSON as well as the stream
 
 
 def _stem(p: Path) -> str:
@@ -34,6 +36,9 @@ class Pipeline:
         self.out_dir.mkdir(parents=True, exist_ok=True)
         self.errors: dict[str, str] = {}
         self.lock = threading.Lock()
+        self.hars: dict[str, tuple[int, float]] = {}  # HAR exports already unpacked: name -> (size, mtime)
+        # outputs older than the parser code are re-parsed, so a restart after an adapter fix refreshes everything
+        self.code_mtime = max(p.stat().st_mtime for p in Path(__file__).parent.rglob("*.py"))
 
     def sync(self) -> list[str]:
         """Copy settled new captures into raw_dir and (re)parse anything whose inputs changed."""
@@ -46,15 +51,24 @@ class Pipeline:
                         continue
                     if not dst.exists() or dst.stat().st_size != src.stat().st_size:
                         shutil.copy2(src, dst)
+            # DevTools HAR exports: only the answer/conversation bodies are written out, never the headers
+            for har in self.watch.glob("*.har"):
+                st = har.stat()
+                if now - st.st_mtime < SETTLE_SECONDS or self.hars.get(har.name) == (st.st_size, st.st_mtime):
+                    continue
+                try:
+                    extract_har(har, self.raw_dir)
+                    self.errors.pop(har.name, None)
+                except (ValueError, OSError):  # not JSON / still being written
+                    self.errors[har.name] = traceback.format_exc(limit=1)
+                self.hars[har.name] = (st.st_size, st.st_mtime)
 
         parsed = []
-        # only answer streams; stored conversations (.conversation.json) are still copied into raw_dir
-        # and can be parsed by hand with `python3 -m extractor parse`, but are not listed here
-        for raw in sorted(self.raw_dir.glob("*.sse")):
-            name = raw.name.replace(".sse", "")
-            out = self.out_dir / f"{name}.json"
+        stored = [f for p in STORED_PLATFORMS for f in self.raw_dir.glob(f"{p}_*.conversation.json")]
+        for raw in sorted([*self.raw_dir.glob("*.sse"), *stored]):
+            out = self.out_dir / f"{_stem(raw)}.json"
             meta = self.raw_dir / f"{_stem(raw)}.meta.json"
-            newest_input = max(raw.stat().st_mtime, meta.stat().st_mtime if meta.exists() else 0)
+            newest_input = max(raw.stat().st_mtime, meta.stat().st_mtime if meta.exists() else 0, self.code_mtime)
             if out.exists() and out.stat().st_mtime >= newest_input:
                 continue
             data = raw.read_bytes()
@@ -68,6 +82,7 @@ class Pipeline:
                 if not result["sources"] and not result["answer"]:  # e.g. a cancelled or idle stream
                     continue
                 result["source_file"] = raw.name
+                result["captured_at"] = result["captured_at"] or _stem(raw).split("_", 1)[-1]
                 out.write_text(json.dumps(result, indent=2, ensure_ascii=False))
                 self.errors.pop(raw.name, None)
                 parsed.append(raw.name)
@@ -90,6 +105,8 @@ class Pipeline:
                 "id": out.stem, "platform": r["platform"], "prompt": r["prompt"], "model": r["model"],
                 "file": r.get("source_file", out.stem), "stats": r["stats"],
                 "fanout_queries": r["fanout_queries"], "mtime": out.stat().st_mtime,
+                "stored": (r.get("diagnostics") or {}).get("input") == "conversation_json",
+                "hidden": len(r.get("insights") or {}),
                 "ts": out.stem.split("_", 1)[-1],  # capture timestamp from the filename; ISO-like, sorts as text
             })
         return sorted(items, key=lambda x: x["ts"], reverse=True)
@@ -153,6 +170,7 @@ th.n,td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
 .p-perplexity{background:#e6f2f3;color:var(--perplexity)}.p-gemini{background:#e9f1fe;color:var(--gemini)}
 .qs{margin-top:8px}.q{color:var(--fg2);font-size:12px;overflow:hidden;padding-left:14px;position:relative;text-overflow:ellipsis;white-space:nowrap;max-width:520px}
 .q:before{color:var(--muted);content:"↳";left:0;position:absolute}.more{color:var(--acc);font-size:12px;font-weight:500;padding-left:14px}
+.tag{background:#f1f5f9;border-radius:6px;color:var(--fg2);font-size:11px;font-weight:500;padding:1px 7px}
 .model{background:#f1f5f9;border-radius:6px;color:var(--fg2);font:12px ui-monospace,SFMono-Regular,Menlo,monospace;padding:2px 7px;white-space:nowrap}
 .cite{align-items:center;display:flex;gap:8px;justify-content:flex-end}
 .ring{--v:0;background:conic-gradient(var(--ok) calc(var(--v)*1%),var(--line) 0);border-radius:50%;height:16px;width:16px;-webkit-mask:radial-gradient(circle 5px,transparent 98%,#000);mask:radial-gradient(circle 5px,transparent 98%,#000)}
@@ -170,7 +188,7 @@ th.n,td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
 </div></div>
 <main class="page">
   <h1>Captures</h1>
-  <p class="sub">Fan-out queries, retrieved sources and citations from ChatGPT, Claude, Perplexity and Gemini.</p>
+  <p class="sub">Fan-out queries, retrieved sources, citations, products and hidden metadata from ChatGPT, Claude, Perplexity and Gemini.</p>
   <section class="kpis" id="kpis"></section>
   <div id="errors"></div>
   <div class="toolbar">
@@ -183,7 +201,8 @@ th.n,td.n{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
   </div>
   <div class="card"><div class="wrap"><table>
     <thead><tr><th>Prompt</th><th class="hide-md">Model</th><th class="n">Queries</th><th class="n hide-sm">Retrieved</th>
-    <th class="n">Cited</th><th class="n hide-md">Not cited</th><th class="n hide-md">YouTube</th></tr></thead>
+    <th class="n">Cited</th><th class="n hide-md">Not cited</th><th class="n hide-md">YouTube</th><th class="n hide-md">Products</th>
+    <th class="n hide-sm" title="Fields the platform sent but did not show">Hidden</th></tr></thead>
     <tbody id="rows"></tbody></table></div></div>
 </main>
 <script>
@@ -238,9 +257,9 @@ function render() {
   ].map(([l, v]) => `<div class="kpi"><div class="l">${l}</div><div class="v">${v.toLocaleString()}</div></div>`).join('') +
     `<div class="kpi"><div class="l">Citation rate</div><div class="v">${rate}<small>%</small></div><div class="bar"><b style="width:${rate}%"></b></div></div>`;
   if (!shown.length) {
-    $('rows').innerHTML = `<tr><td colspan="7"><div class="empty"><div class="ic">${all.length ? '🔍' : '📡'}</div>
+    $('rows').innerHTML = `<tr><td colspan="9"><div class="empty"><div class="ic">${all.length ? '🔍' : '📡'}</div>
       <h3>${all.length ? 'No matching captures' : 'Waiting for your first capture'}</h3>
-      <p>${all.length ? 'Try a different search or platform filter.' : 'Send a prompt in ChatGPT, Claude, Perplexity or Gemini with the capture script installed.'}</p></div></td></tr>`;
+      <p>${all.length ? 'Try a different search or platform filter.' : 'Send a prompt in ChatGPT, Claude, Perplexity or Gemini with the capture script installed, or save a DevTools HAR into the watched folder.'}</p></div></td></tr>`;
     return;
   }
   $('rows').innerHTML = shown.map((c) => {
@@ -249,12 +268,13 @@ function render() {
       (c.fanout_queries.length > 2 ? `<div class="more">+${c.fanout_queries.length - 2} more queries</div>` : '');
     const n = (v) => v ? v : `<span class="dim">0</span>`;
     return `<tr class="row" data-href="/capture/${encodeURIComponent(c.id)}">
-      <td><div class="meta">${chip(c.platform)}<span title="${esc(c.ts)}">${esc(when(c.ts))}</span></div>
+      <td><div class="meta">${chip(c.platform)}<span title="${esc(c.ts)}">${esc(when(c.ts))}</span>${c.stored ? '<span class="tag" title="Parsed from the stored conversation the app loads on reload">Stored</span>' : ''}</div>
         <a class="prompt" href="/capture/${encodeURIComponent(c.id)}">${esc(c.prompt) || '<span class="dim">(no prompt)</span>'}</a>${qs ? `<div class="qs">${qs}</div>` : ''}</td>
       <td class="hide-md"><span class="model">${esc(c.model || '—')}</span></td>
       <td class="n">${n(c.stats.fanout_queries)}</td><td class="n hide-sm">${n(c.stats.retrieved)}</td>
       <td class="n"><div class="cite" title="${pct}% of retrieved sources cited"><span class="ring" style="--v:${pct}"></span>${n(c.stats.cited)}</div></td>
-      <td class="n hide-md">${n(c.stats.retrieved_not_cited)}</td><td class="n hide-md">${n(c.stats.youtube)}</td></tr>`;
+      <td class="n hide-md">${n(c.stats.retrieved_not_cited)}</td><td class="n hide-md">${n(c.stats.youtube)}</td>
+      <td class="n hide-md">${n(c.stats.products)}</td><td class="n hide-sm">${n(c.hidden)}</td></tr>`;
   }).join('');
 }
 render(); refresh(); setInterval(refresh, 3000); setInterval(render, 60000);

@@ -2,7 +2,7 @@
 
 Accepts either
   * the raw SSE body of POST /backend-api/(f/)conversation (v1 delta encoding), or
-  * the stored conversation JSON from GET /backend-api/conversation/<id>.
+  * the stored conversation JSON from GET /backend-api/conversation(s)/<id> (only its last turn is parsed).
 
 Key names are searched recursively instead of via fixed paths, because OpenAI reshuffles
 the metadata layout often; diagnostics record anything the assembler did not understand.
@@ -27,6 +27,14 @@ REF_RE = re.compile(r"turn(\d+)([a-z_]+?)(\d+)")
 PUA_RE = re.compile("[\ue200-\ue2ff]")  # private-use chars wrapping legacy citation markers
 CITE_TAG_RE = re.compile(r"<Cite\s+refs=\{(\[.*?\])\}\s*/?>", re.S)
 LINK_TAG_RE = re.compile(r"<Link\s+[^>]*?url=\"([^\"]+)\"", re.S)
+MD_LINK_RE = re.compile(r"\[[^\]\n]*\]\((https?://[^)\s]+)\)")
+UI_TAG_RE = re.compile(r"<(Entity|AsyncImage)\s+((?:[^>\"{}]|\"[^\"]*\"|\{[^{}]*\})*?)\s*/?>", re.S)
+UI_ATTR_RE = re.compile(r"(\w+)=(?:\"([^\"]*)\"|\{([^{}]*)\})")
+PRODUCT_REF_RE = re.compile(r"turn\d+product\d+")
+# 2026-10: shopping answers bind product cards to records under metadata.model_dil_v2.appData.opGenui
+# .componentResults.<id>.state...extraParams.product, keyed by `cite` ("turn0product0").
+PRODUCT_FIELDS = ("id", "title", "price", "merchants", "rating", "num_reviews", "description", "specs",
+                  "featured_tag", "price_history", "merchant_badges")
 # ChatGPT serves two snippet sizes per source: a short search-engine extract (~150-200 chars) and a long
 # extract from its own page index (~900-1,200 chars). result_source used to name the pipeline; it was
 # removed in July 2026, so length is what tells them apart now.
@@ -269,6 +277,8 @@ class ChatGPTAdapter(Adapter):
         result.sources = sorted(sources.values(), key=lambda s: (not s.cited, not s.retrieved, not s.supporting))
         result.answer = self._answer(messages, refs)
         result.reasoning = self._reasoning(messages)
+        result.products = self._products(blobs, result.answer)
+        result.insights = self._insights(messages, blobs)
         diag["tool_calls"] = [
             {"recipient": m.get("recipient"), "text": _message_text(m)[:2000]}
             for m in messages
@@ -286,11 +296,23 @@ class ChatGPTAdapter(Adapter):
                 doc = json.loads(stripped)
             except json.JSONDecodeError:
                 doc = None
-            if isinstance(doc, dict) and isinstance(doc.get("mapping"), dict):
-                msgs = [n["message"] for n in doc["mapping"].values() if isinstance(n, dict) and isinstance(n.get("message"), dict)]
-                msgs.sort(key=lambda m: m.get("create_time") or 0)
-                env = {"conversation_id": doc.get("conversation_id") or doc.get("id"), "title": doc.get("title")}
-                return msgs, [env], {"input": "conversation_json", "messages": len(msgs)}
+            # 2026-10: GET /backend-api/conversations/<id>?num_turns=10 returns the current branch as a flat,
+            # ordered `messages` list (paged via page_info) instead of the `mapping` tree.
+            if isinstance(doc, dict) and (isinstance(doc.get("mapping"), dict) or isinstance(doc.get("messages"), list)):
+                if isinstance(doc.get("mapping"), dict):
+                    fmt = "mapping"
+                    msgs = [n["message"] for n in doc["mapping"].values() if isinstance(n, dict) and isinstance(n.get("message"), dict)]
+                    msgs.sort(key=lambda m: m.get("create_time") or 0)
+                else:
+                    fmt = "messages"
+                    msgs = [m for m in doc["messages"] if isinstance(m, dict) and isinstance(m.get("author"), dict)]
+                # one Result per answer: keep only the last turn so prompt, sources and answer belong together
+                starts = [i for i, m in enumerate(msgs) if (m.get("author") or {}).get("role") == "user" and _message_text(m).strip()]
+                turn = msgs[starts[-1]:] if starts else msgs
+                env = {"conversation_id": doc.get("conversation_id") or doc.get("id"), "title": doc.get("title"),
+                       "page_info": doc.get("page_info")}
+                return turn, [env], {"input": "conversation_json", "format": fmt, "turns": len(starts),
+                                     "messages": len(turn), "messages_total": len(msgs)}
 
         asm = DeltaAssembler()
         for ev in iter_events(raw):
@@ -490,6 +512,8 @@ class ChatGPTAdapter(Adapter):
         # e.g. <Cite refs={["turn972733youtube14"]}/>, while metadata.content_references stays empty.
         # <Link url="https://..." title="..."/> is a link the model wrote itself (a vendor homepage, a
         # pricing page), usually not a search result, so it marks the source `linked`, not `cited`.
+        # 2026-10: answers also link retrieved results with plain markdown, e.g. [Watch on YouTube](https://youtube...)
+        # with no <Cite> at all; those are `linked` too.
         for m in _answer_messages(messages):
             text = _message_text(m)
             for mm in CITE_TAG_RE.finditer(text):
@@ -497,7 +521,7 @@ class ChatGPTAdapter(Adapter):
                     for t in by_ref.get(rk.group(0), []):
                         t.cited = True
                         t.cited_spans.append({"type": "cite_tag", "start": mm.start(), "end": mm.end(), "matched_text": rk.group(0)})
-            for mm in LINK_TAG_RE.finditer(text):
+            for mm in [*LINK_TAG_RE.finditer(text), *MD_LINK_RE.finditer(text)]:
                 t = self._upsert(sources, {"url": html.unescape(mm.group(1))})
                 t.linked = True
                 t.extra.setdefault("link_spans", []).append({"start": mm.start(), "end": mm.end()})
@@ -532,4 +556,94 @@ class ChatGPTAdapter(Adapter):
                 text = _message_text(m)
                 if text:
                     out.append(text)
+        return out
+
+    @staticmethod
+    def _products(blobs: list[Any], answer: str) -> list[dict[str, Any]]:
+        by_ref: dict[str, dict[str, Any]] = {}
+        for _, v, _ in walk(blobs):
+            if not (isinstance(v, dict) and isinstance(v.get("cite"), str) and PRODUCT_REF_RE.fullmatch(v["cite"])
+                    and isinstance(v.get("title"), str)):
+                continue
+            p = by_ref.setdefault(v["cite"], {"ref": v["cite"]})
+            for f in PRODUCT_FIELDS:
+                if f not in p and v.get(f) not in (None, "", [], {}):
+                    p[f] = v[f]
+            binding = (v.get("__internal") or {}).get("model_data_binding_fields_v1") or {}
+            url = v.get("url") or binding.get("product_page")
+            if url and "url" not in p:
+                p["url"] = url
+            images = v.get("image_urls")
+            if isinstance(images, list) and images and "image_url" not in p:
+                p["image_url"] = images[0]
+            if isinstance(v.get("offers"), list) and v["offers"]:
+                p["offers"] = len(v["offers"])
+        for p in by_ref.values():
+            p["in_answer"] = p["ref"] in answer
+        return list(by_ref.values())
+
+    @staticmethod
+    def _insights(messages: list[dict[str, Any]], blobs: list[Any]) -> dict[str, Any]:
+        """Fields the API sends but the page does not show (or shows only partly)."""
+        out: dict[str, Any] = {}
+        for m in reversed(_answer_messages(messages)):
+            md = m.get("metadata") or {}
+            adjustments = [a for a in md.get("model_adjustments") or [] if isinstance(a, str)]
+            requested, resolved = md.get("default_model_slug"), md.get("resolved_model_slug") or md.get("model_slug")
+            if adjustments or (requested and resolved and requested != resolved):
+                out["model_routing"] = {"requested": requested, "resolved": resolved, "adjustments": adjustments}
+            break
+
+        hidden, empty = [], 0
+        for m in messages:
+            md = m.get("metadata") or {}
+            if md.get("is_visually_hidden_from_conversation"):
+                if not _message_text(m).strip() and not md.get("exclusive_key") and not md.get("message_source"):
+                    empty += 1  # system/context placeholders: the server strips their contents
+                    continue
+                item = {"role": (m.get("author") or {}).get("role"), "content_type": (m.get("content") or {}).get("content_type")}
+                for k in ("exclusive_key", "message_source"):
+                    if md.get(k):
+                        item[k] = md[k]
+                if _message_text(m).strip():
+                    item["text"] = _message_text(m)[:500]
+                hidden.append(item)
+        if hidden:
+            out["hidden_messages"] = hidden
+        if empty:
+            out["hidden_empty_messages"] = empty
+
+        # generative-UI answers: nodes the renderer dropped, plain-text fallback, injected surveys
+        omitted: Counter[tuple] = Counter()
+        for k, v, _ in walk(blobs):
+            if k == "recoveryDiagnostics" and isinstance(v, list):
+                for d in v:
+                    if isinstance(d, dict):
+                        omitted[(d.get("component"), d.get("prop"), d.get("action"), d.get("code"))] += 1
+            elif k == "fallbackMarkdown" and isinstance(v, str) and v.strip():
+                out["fallback_markdown"] = v
+            elif k == "user_signal_metadata" and isinstance(v, dict):
+                for name, sig in v.items():
+                    payload = (sig.get("payload") if isinstance(sig, dict) else None) or {}
+                    if isinstance(payload.get("question"), str):
+                        options = [o.get("label") for o in payload.get("options") or [] if isinstance(o, dict)]
+                        survey = {"name": name, "question": payload["question"], "options": options}
+                        if survey not in out.setdefault("surveys", []):
+                            out["surveys"].append(survey)
+            elif k == "page_info" and isinstance(v, dict) and v.get("has_previous_page"):
+                out["history_truncated"] = True
+        if omitted:
+            out["render_omissions"] = [{"component": c, "prop": p, "action": a, "code": code, "count": n}
+                                       for (c, p, a, code), n in omitted.items()]
+
+        entities, images = [], []
+        for m in _answer_messages(messages):
+            for mm in UI_TAG_RE.finditer(_message_text(m)):
+                attrs = {a.group(1): a.group(2) if a.group(2) is not None else "{" + a.group(3) + "}"
+                         for a in UI_ATTR_RE.finditer(mm.group(2))}
+                (entities if mm.group(1) == "Entity" else images).append(attrs)
+        if entities:
+            out["entities"] = entities
+        if images:
+            out["image_queries"] = images
         return out
