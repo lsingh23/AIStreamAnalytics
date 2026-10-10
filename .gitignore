@@ -1,0 +1,6 @@
+# raw captures and the saved curl contain account identifiers / tokens
+data/raw/
+private/
+__pycache__/
+.DS_Store
+docs/

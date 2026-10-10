@@ -1,0 +1,654 @@
+{
+  "platform": "claude",
+  "prompt": "best project management tools for small agencies",
+  "model": "claude-sonnet-5-5",
+  "captured_at": "2026-10-10T11:55:16.044Z",
+  "conversation_id": "221397de-1bce-4536-ba0f-f824633b9d5d",
+  "fanout_queries": [
+    "best project management software for small agencies 2026",
+    "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+  ],
+  "sources": [
+    {
+      "url": "https://ones.com/blog/?p=1069793",
+      "title": "Knowledge Collection",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "ones",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 1282,
+          "end": 1282,
+          "matched_text": "It's recommended for managing client work and billable hours.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "ones.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=ones.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "ones.com"
+    },
+    {
+      "url": "https://agiled.app/blog/best-project-management-software-for-agencies",
+      "title": "Best Project Management Software for Agencies: 14 Tools Ranked for 2026",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "agiled",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 1149,
+          "end": 1149,
+          "matched_text": "It adds budgeting and financial management features that Asana, ClickUp and monday.com lack.",
+          "cited_text": ""
+        },
+        {
+          "type": "claude_citation",
+          "start": 1890,
+          "end": 1890,
+          "matched_text": "The flat fee only pays off once your team is past roughly 20 people.",
+          "cited_text": ""
+        },
+        {
+          "type": "claude_citation",
+          "start": 2002,
+          "end": 2002,
+          "matched_text": "It's listed as the best tiny-team Kanban option.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "agiled.app",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=agiled.app",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "agiled.app"
+    },
+    {
+      "url": "https://www.serif.ai/guides/project-management-for-agencies",
+      "title": "Start Free Trial",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "serif",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 1425,
+          "end": 1425,
+          "matched_text": "It combines proposals, contracts, project management, time tracking and invoicing in one tool.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "serif.ai",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=serif.ai",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "serif.ai"
+    },
+    {
+      "url": "https://toolradar.com/guides/best-project-management-for-agencies",
+      "title": "best project management for agencies",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "toolradar",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 661,
+          "end": 661,
+          "matched_text": "One comparison also found it the friendliest for sharing boards with clients.",
+          "cited_text": ""
+        },
+        {
+          "type": "claude_citation",
+          "start": 877,
+          "end": 877,
+          "matched_text": "It also has a 3-seat minimum, so a team of 4 pays for 5.",
+          "cited_text": ""
+        },
+        {
+          "type": "claude_citation",
+          "start": 1630,
+          "end": 1630,
+          "matched_text": "The tradeoff is that its interface is heavier, so a small shop can find it overbuilt.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "toolradar.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=toolradar.com",
+        "queries": [
+          "best project management software for small agencies 2026",
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "toolradar.com"
+    },
+    {
+      "url": "https://itsourcecode.com/business-saas/asana-vs-monday-vs-clickup-2026-which-for-your-team/",
+      "title": "Asana vs monday.com vs ClickUp 2026: Which for Your Team",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "itsourcecode",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 661,
+          "end": 661,
+          "matched_text": "One comparison also found it the friendliest for sharing boards with clients.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "itsourcecode.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=itsourcecode.com",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "itsourcecode.com"
+    },
+    {
+      "url": "https://agiled.app/compare/asana-vs-clickup-vs-monday",
+      "title": "Asana vs ClickUp vs Monday.com: Three-Way Comparison (2026)",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "agiled",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 456,
+          "end": 456,
+          "matched_text": "The tradeoff is a steeper learning curve.",
+          "cited_text": ""
+        },
+        {
+          "type": "claude_citation",
+          "start": 877,
+          "end": 877,
+          "matched_text": "It also has a 3-seat minimum, so a team of 4 pays for 5.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "agiled.app",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=agiled.app",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "agiled.app"
+    },
+    {
+      "url": "https://productive.io/blog/asana-vs-clickup-vs-monday-vs-productive/",
+      "title": "Asana vs ClickUp vs Monday vs Productive Reviewed (2026)",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "productive",
+      "type": "web",
+      "retrieved": true,
+      "cited": true,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [
+        {
+          "type": "claude_citation",
+          "start": 1149,
+          "end": 1149,
+          "matched_text": "It adds budgeting and financial management features that Asana, ClickUp and monday.com lack.",
+          "cited_text": ""
+        }
+      ],
+      "snippets": [],
+      "extra": {
+        "site_domain": "productive.io",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=productive.io",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "productive.io"
+    },
+    {
+      "url": "https://blog.orangescrum.com/project-management-software-smbs-agencies/",
+      "title": "project management software smbs agencies",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "orangescrum",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "orangescrum.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=orangescrum.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "blog.orangescrum.com"
+    },
+    {
+      "url": "https://toggl.com/blog/?p=57433",
+      "title": "toggl.com",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "toggl",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "toggl.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=toggl.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "toggl.com"
+    },
+    {
+      "url": "https://git.handmade.network/best-project-management-software-for-small-business-2026.html",
+      "title": "best project management software for small business 2026",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "handmade",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "handmade.network",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=handmade.network",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "git.handmade.network"
+    },
+    {
+      "url": "https://toggl.com/blog/project-management-software-for-agencies",
+      "title": "project management software for agencies",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "toggl",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "toggl.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=toggl.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "toggl.com"
+    },
+    {
+      "url": "https://morningmate.com/m/blog/project-management-software-for-small-ad-agencies-need",
+      "title": "Project Management",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "morningmate",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "morningmate.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=morningmate.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "morningmate.com"
+    },
+    {
+      "url": "https://costbench.com/best/project-management-for-agencies/",
+      "title": "Best Project Management for Agencies 2026: Top 7 Ranked",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "costbench",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "costbench.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=costbench.com",
+        "queries": [
+          "best project management software for small agencies 2026"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "costbench.com"
+    },
+    {
+      "url": "https://itsourcecode.com/?p=152996",
+      "title": "Asana vs monday.com vs ClickUp 2026: Which for Your Team",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "itsourcecode",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "itsourcecode.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=itsourcecode.com",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "itsourcecode.com"
+    },
+    {
+      "url": "https://www.getmonetizely.com/articles/how-do-mondaycom-asana-and-clickup-compare-project-management-pricing-strategies-decoded",
+      "title": "How Do Monday.com, Asana, and ClickUp Compare? Project Management Pricing Strategies Decoded",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "getmonetizely",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "getmonetizely.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=getmonetizely.com",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "getmonetizely.com"
+    },
+    {
+      "url": "https://www.simplilearn.com/asana-vs-monday-article",
+      "title": "asana vs monday article",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "simplilearn",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "simplilearn.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=simplilearn.com",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "simplilearn.com"
+    },
+    {
+      "url": "https://tech.co/?p=333096",
+      "title": "tech.co",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "tech",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "tech.co",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=tech.co",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "tech.co"
+    },
+    {
+      "url": "https://browsee.io/blog/choosing-the-best-project-management-tool-clickup-vs-asana-vs-monday/",
+      "title": "Choosing the Best Project Management Tool: Clickup Vs Asana Vs Monday",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "browsee",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "browsee.io",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=browsee.io",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "browsee.io"
+    },
+    {
+      "url": "https://tasksboard.com/blog/asana-vs-clickup-comparison",
+      "title": "Back to blog",
+      "snippet": "",
+      "pub_date": null,
+      "attribution": "tasksboard",
+      "type": "web",
+      "retrieved": true,
+      "cited": false,
+      "supporting": false,
+      "linked": false,
+      "ref_ids": [],
+      "cited_spans": [],
+      "snippets": [],
+      "extra": {
+        "site_domain": "tasksboard.com",
+        "favicon_url": "https://www.google.com/s2/favicons?sz=64&domain=tasksboard.com",
+        "queries": [
+          "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        ],
+        "tools": [
+          "web_search"
+        ]
+      },
+      "domain": "tasksboard.com"
+    }
+  ],
+  "reasoning": [
+    "Researching top project management tools for small agencies.",
+    "Drafting a concise comparison with sources to verify."
+  ],
+  "answer": "I'll check what's current for 2026 before recommending anything.\n\nThe right pick depends on how your agency bills and works. These are the tools that came up repeatedly in 2026 comparisons, grouped by what they're best at.\n\n**Best all-rounders**\n- **ClickUp** is the value pick. Its Unlimited plan at about $7/user/month is the cheapest of the big three, and it offers 15+ views, including workload and whiteboard. The tradeoff is a steeper learning curve.\n- **Asana** is the easiest to adopt. Its Starter plan is around $10.99 per seat on annual billing, with no minimum seat count. One comparison also found it the friendliest for sharing boards with clients.\n- **monday.com** is the most visual, with client-friendly boards and dashboards. Automations, time tracking and dependencies sit behind its $19/seat Pro tier. It also has a 3-seat minimum, so a team of 4 pays for 5.\n\n**Built around agency economics**\n- **Productive** is for agencies that care about profitability. It starts at about $9/user/month and has live budgets and utilization tracking. It adds budgeting and financial management features that Asana, ClickUp and monday.com lack.\n- **Teamwork.com** suits client-facing agencies that bill by the hour. It's recommended for managing client work and billable hours.\n- **Bonsai** suits very small creative studios. It combines proposals, contracts, project management, time tracking and invoicing in one tool.\n- **Wrike** is worth a look if you rely on creative proofing. Proofing and approvals are a reason agencies stay on it. The tradeoff is that its interface is heavier, so a small shop can find it overbuilt.\n\n**Simple and flat-priced**\n- **Basecamp** works if you want one project per client and minimal fuss. It costs $15/user/month or $299/month flat for Pro Unlimited, and has a Clients feature. The flat fee only pays off once your team is past roughly 20 people.\n- **Trello** is a good lightweight Kanban tool for tiny teams. It's listed as the best tiny-team Kanban option.\n\n**How I'd choose**\n- **Under 5 people on a tight budget:** start with ClickUp or Asana's free tier, or Bonsai if you also need contracts and invoicing.\n- **Retainers and billable hours:** go with Productive or Teamwork.\n- **Heavy client collaboration and approvals:** go with Asana, monday.com or Wrike.\n\nMost of these have free trials, so run one real client project in your top two before committing. Prices and plan limits change often and vary between review sites, so check the vendor's pricing page before you buy. If you tell me your team size, billing model (hourly, retainer or fixed project) and whether clients need logins, I can narrow this to one or two picks.\n\nSources:\n- [Agiled: 14 PM tools ranked for agencies](https://agiled.app/blog/best-project-management-software-for-agencies)\n- [Toolradar: Best PM for agencies](https://toolradar.com/guides/best-project-management-for-agencies)\n- [Serif: PM for agencies](https://www.serif.ai/guides/project-management-for-agencies)\n- [Agiled: Asana vs ClickUp vs monday](https://agiled.app/compare/asana-vs-clickup-vs-monday)\n- [ITSourceCode: Asana vs monday vs ClickUp](https://itsourcecode.com/business-saas/asana-vs-monday-vs-clickup-2026-which-for-your-team/)\n- [Productive: comparison](https://productive.io/blog/asana-vs-clickup-vs-monday-vs-productive/)\n- [ONES: Best PM for small business](https://ones.com/blog/?p=1069793)",
+  "diagnostics": {
+    "input": "connect_timeline",
+    "events": 87,
+    "heartbeats": 38,
+    "complete": true,
+    "close": {
+      "Stream-Close-Reason": [
+        "cadence"
+      ]
+    },
+    "groups": [
+      "Searched the web",
+      "Searched the web",
+      "Thinking"
+    ],
+    "unknown_upsert_fields": {},
+    "tool_calls": [
+      {
+        "name": "web_search",
+        "input": {
+          "query": "best project management software for small agencies 2026"
+        }
+      },
+      {
+        "name": "web_search",
+        "input": {
+          "query": "agency project management tools pricing comparison Asana monday ClickUp Productive Teamwork"
+        }
+      }
+    ],
+    "block_types": {
+      "thinking": 2,
+      "text": 2,
+      "tool_use": 2,
+      "tool_result": 2
+    }
+  },
+  "stats": {
+    "fanout_queries": 2,
+    "sources_total": 19,
+    "retrieved": 19,
+    "cited": 7,
+    "retrieved_not_cited": 12,
+    "cited_not_in_retrieved": 0,
+    "supporting_only": 0,
+    "linked_only": 0,
+    "long_snippets": 0,
+    "youtube": 0
+  },
+  "source_file": "claude_2026-10-10T11-55-15-914Z.sse"
+}
